@@ -165,8 +165,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-          </div>git a
-
+          </div>
           <div className="mt-10 border-t border-gray-300 pt-6 flex flex-col lg:flex-row items-center justify-between">
             <p className="text-primary text-sm">
               Shop.co © 2000-2023, All Rights Reserved
