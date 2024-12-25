@@ -5,6 +5,13 @@ export default {
     extend: {
       fontFamily: {
         "Integral-CF": ["'FONTSPRING DEMO - Integral-CF'", "sans-serif"],
+        Satoshi: ["Satoshi", "sans-serif"],
+      },
+      colors: {
+        primary: "#616060",
+      },
+      width: {
+        custom: "1280px",
       },
     },
   },

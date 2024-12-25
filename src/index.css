@@ -3,15 +3,28 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'FONTSPRING DEMO - Integral-CF';
-    src: url('/font/FONTSPRINGDEMO-IntegralCFRegular.eot');
-    src: url('/font/FONTSPRINGDEMO-IntegralCFRegular.eot') format('embedded-opentype'),
-        url('/font/FONTSPRINGDEMO-IntegralCFRegular.woff2') format('woff2'),
-        url('/font/FONTSPRINGDEMO-IntegralCFRegular.woff') format('woff'),
-        url('/font/FONTSPRINGDEMO-IntegralCFRegular.ttf') format('truetype'),
-        url('/font/FONTSPRINGDEMO-IntegralCFRegular.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "FONTSPRING DEMO - Integral-CF";
+  src: url("/font/FONTSPRINGDEMO-IntegralCFRegular.eot");
+  src: url("/font/FONTSPRINGDEMO-IntegralCFRegular.eot")
+      format("embedded-opentype"),
+    url("/font/FONTSPRINGDEMO-IntegralCFRegular.woff2") format("woff2"),
+    url("/font/FONTSPRINGDEMO-IntegralCFRegular.woff") format("woff"),
+    url("/font/FONTSPRINGDEMO-IntegralCFRegular.ttf") format("truetype"),
+    url("/font/FONTSPRINGDEMO-IntegralCFRegular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: "Satoshi";
+  src: url("/font/Satoshi-Regular.eot");
+  src: url("/font/Satoshi-Regular.eot") format("embedded-opentype"),
+    url("/font/Satoshi-Regular.woff2") format("woff2"),
+    url("/font/Satoshi-Regular.woff") format("woff"),
+    url("/font/Satoshi-Regular.ttf") format("truetype"),
+    url("/font/Satoshi-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
