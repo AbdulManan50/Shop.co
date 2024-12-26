@@ -5,6 +5,7 @@ import Footer from "./Component/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Productsdetailes from "./Pages/Productsdetailes/Productsdetailes";
 import Cart from "./Pages/Cart/Cart";
+import Shop from "./Pages/Shop/Shop";
 
 export default function App() {
   return (
@@ -18,6 +19,8 @@ export default function App() {
             element={<Productsdetailes />}
           ></Route>
           <Route path="/cart" element={<Cart />}></Route>
+          <Route path="/shop" element={<Shop />}></Route>
+          <Route path="/wishlist" element={<Shop />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

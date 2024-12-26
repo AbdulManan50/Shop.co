@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -38,9 +39,7 @@ export default function Header() {
             <li className="hover:text-primary cursor-pointer">Brands</li>
           </ul>
 
-          {/* Search and Icons */}
           <div className="flex items-center space-x-4">
-            {/* Search Box */}
             <div className="relative">
               <input
                 type="text"
@@ -55,11 +54,11 @@ export default function Header() {
               >
                 <MdOutlineShoppingCart />
               </button>
-              <button
-                aria-label="User"
-                className="hover:text-primary "
-              >
+              <button aria-label="User" className="hover:text-primary ">
                 <FaRegUserCircle />
+              </button>
+              <button aria-label="User" className="hover:text-primary ">
+                <FaRegHeart />
               </button>
             </div>
           </div>
