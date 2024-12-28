@@ -1,0 +1,100 @@
+<!-- Step 2: Vehicle Information -->
+<div class="step step-container">
+  <h4 class="step-title">Step 2: Vehicle Information</h4>
+  <div id="vehicleList">
+    <!-- First vehicle added by default -->
+    <div class="vehicle-container mb-3" id="vehicle1">
+      <h5>Vehicle 1</h5>
+      <div class="row mb-3 d-flex flex-nowrap gap-3">
+        <div style="width: 48%" class="col-md-6 form-control">
+          <label>Select Vehicle Type</label>
+          <select class="mb-2" name="vehicle_type[]" required>
+            <option value="" disabled selected>Select *</option>
+            <option value="SUV">SUV</option>
+            <option value="Car">Car</option>
+            <option value="Pickup">Pickup</option>
+            <option value="Van">Van</option>
+          </select>
+          <div class="invalid-feedback">Please select Vehicle Type.</div>
+        </div>
+        <div style="width: 48%" class="col-md-6 form-control">
+          <label>Vehicle Make</label>
+          <input
+            type="text"
+            class="mb-2"
+            name="vehicle_make[]"
+            placeholder="e.g Toyota"
+            required
+          />
+          <div class="invalid-feedback">Please enter Vehicle Make.</div>
+        </div>
+      </div>
+
+      <div class="row mb-3 d-flex flex-nowrap gap-3">
+        <div style="width: 48%" class="col-md-6 form-control">
+          <label>Vehicle Model Year</label>
+          <input
+            type="number"
+            class="mb-2"
+            name="vehicle_model_year[]"
+            placeholder="2024"
+            required
+          />
+          <div class="invalid-feedback">Please enter Vehicle Model Year.</div>
+        </div>
+
+        <div style="width: 48%" class="col-md-6 form-control">
+          <label>Vehicle Model</label>
+          <input
+            type="text"
+            class="mb-2"
+            name="vehicle_model[]"
+            placeholder="e.g Camry"
+            required
+          />
+          <div class="invalid-feedback">Please enter Vehicle Model.</div>
+        </div>
+      </div>
+      <div class="col-md-6 form-control">
+        <label>Vehicle Condition</label>
+        <div class="d-flex gap-3">
+          <div class="form-check mb-2">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="vehicle_inop"
+              id="vehicle_inop_yes"
+              value="1"
+              required
+              checked
+            />
+            <label
+              class="form-check-label"
+              for="vehicle_inop_yes"
+              style="color: black; font-weight: bold"
+              >Operable</label
+            >
+          </div>
+          <div class="form-check mb-2">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="vehicle_inop"
+              id="vehicle_inop_no"
+              value="0"
+              required
+            />
+            <label
+              class="form-check-label"
+              for="vehicle_inop_no"
+              style="color: black; font-weight: bold"
+              >Inoperable</label
+            >
+          </div>
+        </div>
+
+        <div class="invalid-feedback">Please select a Vehicle Condition.</div>
+      </div>
+    </div>
+  </div>
+</div>

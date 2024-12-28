@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Productsdetailes from "./Pages/Productsdetailes/Productsdetailes";
 import Cart from "./Pages/Cart/Cart";
 import Shop from "./Pages/Shop/Shop";
+import Wishlist from "./Pages/Wishlist/Wishlist";
 
 export default function App() {
   return (
@@ -20,7 +21,7 @@ export default function App() {
           ></Route>
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/shop" element={<Shop />}></Route>
-          <Route path="/wishlist" element={<Shop />}></Route>
+          <Route path="/wishlist" element={<Wishlist />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

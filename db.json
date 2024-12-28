@@ -1,0 +1,389 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "T-Shirts",
+      "products": [
+        {
+          "id": 1,
+          "name": "T-shirts 1",
+          "price": 3000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/T-shirts1.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "T-shirts 2",
+          "price": 6000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/T-shirts2.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "T-shirts 3",
+          "price": 9000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/T-shirts3.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "T-shirts 4",
+          "price": 12000,
+          "rating": 4,
+          "inStock": true,
+          "Image": "/Image/T-shirts1.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "T-shirts 5",
+          "price": 15000,
+          "rating": 5,
+          "inStock": true,
+          "Image": "/Image/T-shirts1.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Shorts",
+      "products": [
+        {
+          "id": 1,
+          "name": "Shorts 1",
+          "price": 3000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Shorts1.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Shorts 2",
+          "price": 6000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Shorts2.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Shorts 3",
+          "price": 9000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Shorts3.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Shorts 4",
+          "price": 12000,
+          "rating": 4,
+          "inStock": true,
+          "Image": "/Image/Shorts4.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Shorts 5",
+          "price": 15000,
+          "rating": 5,
+          "inStock": true,
+          "Image": "/Image/Shorts5.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Shirts",
+      "products": [
+        {
+          "id": 1,
+          "name": "Shirts 1",
+          "price": 3000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Shirts1.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Shirts 2",
+          "price": 6000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Shirts2.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Shirts 3",
+          "price": 9000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Shirts3.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Shirts 4",
+          "price": 12000,
+          "rating": 4,
+          "inStock": true,
+          "Image": "/Image/Shirts4.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Shirts 5",
+          "price": 15000,
+          "rating": 5,
+          "inStock": true,
+          "Image": "/Image/Shirts5.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Hoodie",
+      "products": [
+        {
+          "id": 1,
+          "name": "Hoodie 1",
+          "price": 3000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Hoodie1.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Hoodie 2",
+          "price": 6000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Hoodie2.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Hoodie 3",
+          "price": 9000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Hoodie3.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Hoodie 4",
+          "price": 12000,
+          "rating": 4,
+          "inStock": true,
+          "Image": "/Image/Hoodie4.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Hoodie 5",
+          "price": 15000,
+          "rating": 5,
+          "inStock": true,
+          "Image": "/Image/Hoodie5.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Jeans",
+      "products": [
+        {
+          "id": 1,
+          "name": "Jeans 1",
+          "price": 3000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Jeans1.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Jeans 2",
+          "price": 6000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Jeans2.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Jeans 3",
+          "price": 9000,
+          "rating": 4.5,
+          "inStock": true,
+          "Image": "/Image/Jeans3.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Jeans 4",
+          "price": 12000,
+          "rating": 4,
+          "inStock": true,
+          "Image": "/Image/Jeans4.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Jeans 5",
+          "price": 15000,
+          "rating": 5,
+          "inStock": true,
+          "Image": "/Image/Jeans5.png",
+          "size": [
+            { "name": "Small", "label": "S" },
+            { "name": "Medium", "label": "M" },
+            { "name": "Large", "label": "L" },
+            { "name": "Extra Large", "label": "XL" },
+            { "name": "Double extra Large", "label": "XXL" }
+          ]
+        }
+      ]
+    }
+  ]
+}

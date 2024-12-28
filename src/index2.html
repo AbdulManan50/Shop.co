@@ -1,0 +1,92 @@
+<div class="vehicle-container mb-3" id="vehicle${vehicleIndex}">
+  <h5>Vehicle ${vehicleIndex}</h5>
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <label>Vehicle Make</label>
+      <input
+        type="text"
+        class="form-control mb-2"
+        name="vehicle_make[]"
+        placeholder="Vehicle Make"
+        required
+      />
+      <div class="invalid-feedback">Please enter Vehicle Make.</div>
+    </div>
+
+    <div class="col-md-6">
+      <label>Vehicle Model</label>
+      <input
+        type="text"
+        class="form-control mb-2"
+        name="vehicle_model[]"
+        placeholder="e.g Camry"
+        required
+      />
+      <div class="invalid-feedback">Please enter Vehicle Model.</div>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <label>Vehicle Model Year</label>
+      <input
+        type="number"
+        class="form-control mb-2"
+        name="vehicle_model_year[]"
+        placeholder="Vehicle Model Year"
+        required
+      />
+      <div class="invalid-feedback">Please enter Vehicle Model Year.</div>
+    </div>
+
+    <div class="new-vehicle-type">
+      <label>Select Vehicle Type</label>
+      <select class="form-select mb-2" name="vehicle_type[]" required>
+        <option value="" disabled selected>Select*</option>
+        <option value="SUV">SUV</option>
+        <option value="Car">Car</option>
+        <option value="Pickup">Pickup</option>
+        <option value="Van">Van</option>
+      </select>
+      <div class="invalid-feedback">Please select Vehicle Type.</div>
+    </div>
+  </div>
+
+  <div class="col mb-3">
+    <label class="form-label d-block">Vehicle Inoperable*</label>
+    <div>
+      <div class="form-check">
+        <input
+          type="radio"
+          class="form-check-input custom-radio"
+          id="transportOpen"
+          name="transport_type[]"
+          value="1"
+          required
+        />
+        <label class="form-check-label" for="transportOpen">Yes</label>
+      </div>
+      <div class="form-check">
+        <input
+          type="radio"
+          class="form-check-input custom-radio"
+          id="transportEnclosed"
+          name="transport_type[]"
+          value="2"
+          required
+        />
+        <label class="form-check-label" for="transportEnclosed">No</label>
+      </div>
+      <div class="invalid-feedback">Please select a Vehicle Inop.</div>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="btn btn-danger"
+    onclick="removeVehicle(${vehicleIndex})"
+  >
+    Remove Vehicle
+  </button>
+</div>
+`;

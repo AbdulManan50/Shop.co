@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('Satoshi-Regular.eot');
+    src: url('Satoshi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Satoshi-Regular.woff2') format('woff2'),
+        url('Satoshi-Regular.woff') format('woff'),
+        url('Satoshi-Regular.ttf') format('truetype'),
+        url('Satoshi-Regular.svg#Satoshi-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
