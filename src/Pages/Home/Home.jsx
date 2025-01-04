@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "./Banner";
 import { MdOutlineStar } from "react-icons/md";
+import Products from "./Products";
 
 export default function Home() {
   return (
@@ -25,133 +26,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-custom mx-auto">
-        <div>
-          <h1 className="font-Integral-CF font-bold text-5xl py-16 text-center">
-            NEW ARRIVALS
-          </h1>
-        </div>
-        <div className="flex gap-5">
-          <div className="w-[24%]">
-            <div>
-              <img
-                className="rounded-xl"
-                src="/public/Image/products1.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <h1 className="font-Satoshi text-lg font-bold pt-2">
-                T-SHIRT WITH TAPE DETAILS
-              </h1>
-            </div>
-            <div className="flex items-center gap-2">
-              <h1 className="flex gap-1 text-yellow-500">
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-              </h1>
-              <h1 className="flex">
-                <span>4.5/</span>
-                <span className="text-primary">5</span>
-              </h1>
-            </div>
-            <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-          </div>
-          <div className="w-[24%]">
-            <div>
-              <img
-                className="rounded-xl"
-                src="/public/Image/products2.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <h1 className="font-Satoshi text-lg font-bold pt-2">
-                T-SHIRT WITH TAPE DETAILS
-              </h1>
-            </div>
-            <div className="flex items-center gap-2">
-              <h1 className="flex gap-1 text-yellow-500">
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-              </h1>
-              <h1 className="flex">
-                <span>4.5/</span>
-                <span className="text-primary">5</span>
-              </h1>
-            </div>
-            <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-          </div>
-          <div className="w-[24%]">
-            <div>
-              <img
-                className="rounded-xl"
-                src="/public/Image/products3.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <h1 className="font-Satoshi text-lg font-bold pt-2">
-                T-SHIRT WITH TAPE DETAILS
-              </h1>
-            </div>
-            <div className="flex items-center gap-2">
-              <h1 className="flex gap-1 text-yellow-500">
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-              </h1>
-              <h1 className="flex">
-                <span>4.5/</span>
-                <span className="text-primary">5</span>
-              </h1>
-            </div>
-            <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-          </div>
-          <div className="w-[24%]">
-            <div>
-              <img
-                className="rounded-xl"
-                src="/public/Image/products4.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <h1 className="font-Satoshi text-lg font-bold pt-2">
-                T-SHIRT WITH TAPE DETAILS
-              </h1>
-            </div>
-            <div className="flex items-center gap-2">
-              <h1 className="flex gap-1 text-yellow-500">
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-              </h1>
-              <h1 className="flex">
-                <span>4.5/</span>
-                <span className="text-primary">5</span>
-              </h1>
-            </div>
-            <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-          </div>
-        </div>
-        <div className="flex items-center justify-center py-10">
-          <button className="px-10 mx-auto py-1.5 font-Satoshi border-[1px] border-primary rounded-full ">
-            View All
-          </button>
-        </div>
-        <hr />
-      </div>
+      <Products />
       <div className="w-custom mx-auto">
         <div>
           <h1 className="font-Integral-CF font-bold text-5xl py-16 text-center uppercase">

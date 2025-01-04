@@ -1,9 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MdOutlineStar } from "react-icons/md";
 import { BsFilterRight } from "react-icons/bs";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCategories } from "../../Redux/Slice";
+import { FaRegHeart } from "react-icons/fa";
 
 export default function Shop() {
+  const despatch = useDispatch();
+
+  const { categories, loading, error } = useSelector(
+    (state) => state.categories
+  );
+
+  useEffect(() => {
+    despatch(fetchCategories());
+  }, [despatch]);
+  {
+    loading && <>{"loading................."}</>;
+  }
+  {
+    error && <>{"loading................."}</>;
+  }
+
+  const [allCategories, setAllCategory] = useState([]);
+
+  useEffect(() => {
+    console.log("allCategories");
+    setAllCategory(categories);
+  }, [categories]);
+
+  console.log("Asdasdasdas: ", categories);
+
+  const handleSelectCategory = (category_name) => {
+    console.log("category_name", category_name);
+
+    const filterCategory = categories.filter((el) => el.name === category_name);
+
+    if (filterCategory?.length > 0) {
+      setAllCategory(filterCategory);
+    }
+
+    console.log("filterCategory", filterCategory);
+  };
+
   return (
     <>
       <div className="flex gap-5 items-start w-custom mx-auto">
@@ -20,32 +60,46 @@ export default function Shop() {
           </div>
           <hr />
           <div className="space-y-3 pt-3">
-            <div className="flex justify-between items-center">
+            <div
+              onClick={() => handleSelectCategory("T-Shirts")}
+              className="flex justify-between items-center cursor-pointer"
+            >
               <h1 className="font-Satoshi">T-shirts</h1>
               <h1 className="text-xl">
                 <MdOutlineKeyboardArrowRight />
               </h1>
             </div>
-            <div className="flex justify-between items-center">
+            <div
+              onClick={() => handleSelectCategory("Shorts")}
+              className="flex justify-between items-center cursor-pointer"
+            >
               <h1 className="font-Satoshi">Shorts</h1>
               <h1 className="text-xl">
                 <MdOutlineKeyboardArrowRight />
               </h1>
             </div>
-            <div className="flex justify-between items-center">
+            <div
+              onClick={() => handleSelectCategory("Shirts")}
+              className="flex justify-between items-center cursor-pointer"
+            >
               <h1 className="font-Satoshi">Shirts</h1>
               <h1 className="text-xl">
                 <MdOutlineKeyboardArrowRight />
               </h1>
             </div>
-            <div className="flex justify-between items-center">
+            <div
+              onClick={() => handleSelectCategory("Hoodie")}
+              className="flex justify-between items-center cursor-pointer"
+            >
               <h1 className="font-Satoshi">Hoodie</h1>
               <h1 className="text-xl">
                 <MdOutlineKeyboardArrowRight />
               </h1>
             </div>
-
-            <div className="flex justify-between items-center">
+            <div
+              onClick={() => handleSelectCategory("Jeans")}
+              className="flex justify-between items-center cursor-pointer"
+            >
               <h1 className="font-Satoshi">Jeans</h1>
               <h1 className="text-xl">
                 <MdOutlineKeyboardArrowRight />
@@ -173,7 +227,7 @@ export default function Shop() {
               </div>
             </div>
           </div>
-          <div className="pt-5" >
+          <div className="pt-5">
             <button className="px-14 py-2 text-white bg-black font-Satoshi  rounded-full">
               Apply Filter
             </button>
@@ -182,426 +236,44 @@ export default function Shop() {
         <div className="w-[80%] py-10">
           <h1 className="font-Satoshi text-2xl font-bold pb-5">Casual</h1>
           <div className="flex gap-y-5 flex-wrap">
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products1.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products2.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products3.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
-            <div className="w-[33%]">
-              <div>
-                <img
-                  className="rounded-xl"
-                  src="/public/Image/products4.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 className="font-Satoshi text-lg font-bold pt-2">
-                  T-SHIRT WITH TAPE DETAILS
-                </h1>
-              </div>
-              <div className="flex items-center gap-2">
-                <h1 className="flex gap-1 text-yellow-500">
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                  <MdOutlineStar />
-                </h1>
-                <h1 className="flex">
-                  <span>4.5/</span>
-                  <span className="text-primary">5</span>
-                </h1>
-              </div>
-              <h1 className="text-xl font-Satoshi font-bold">$120</h1>
-            </div>
+            {allCategories?.map((category) =>
+              category?.products.map((product) => (
+                <div key={product.id} className="w-[33%] pr-5 cursor-pointer">
+                  <div className="relative group">
+                    <h1 className="absolute p-2 rounded-full bg-white top-3 right-8 text-xl hover:text-secondary cursor-pointer opacity-0 group-hover:opacity-100 transition-all ease-out duration-500 translate-x-5 group-hover:translate-x-0 ">
+                      <FaRegHeart />
+                    </h1>
+                    <img className="rounded-xl" src={product.Image} alt="" />
+                  </div>
+                  <div>
+                    <h1 className="font-Satoshi text-lg font-bold pt-2">
+                      {product.name}
+                    </h1>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <h1 className="flex gap-1 text-yellow-500">
+                      <MdOutlineStar />
+                      <MdOutlineStar />
+                      <MdOutlineStar />
+                      <MdOutlineStar />
+                      <MdOutlineStar />
+                    </h1>
+                    <h1 className="flex">
+                      <span>4.5/</span>
+                      <span className="text-primary">5</span>
+                    </h1>
+                  </div>
+                  <div className="flex justify-between items-center pr-5">
+                    <h1 className="text-xl font-Satoshi font-bold">
+                      {product.price}
+                    </h1>
+                    <button className="px-5 py-1 text-secondary border-[#DB4444] border-[2px] rounded-lg">
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              ))
+            )}
           </div>
           <div className="flex mt-10 items-center justify-center border-t  border-gray-300 py-3">
             <div className="flex items-center justify-center">

@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         primary: "#616060",
+        secondary: "#DB4444",
       },
       width: {
         custom: "1280px",

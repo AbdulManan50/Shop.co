@@ -11,6 +11,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/T-shirts1.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -26,6 +27,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/T-shirts2.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -39,6 +41,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/T-shirts3.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -54,6 +57,7 @@
           "rating": 4,
           "inStock": true,
           "Image": "/Image/T-shirts1.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -67,6 +71,7 @@
           "rating": 5,
           "inStock": true,
           "Image": "/Image/T-shirts1.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -88,6 +93,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Shorts1.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -103,6 +109,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Shorts2.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -116,6 +123,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Shorts3.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -131,6 +139,7 @@
           "rating": 4,
           "inStock": true,
           "Image": "/Image/Shorts4.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -144,6 +153,7 @@
           "rating": 5,
           "inStock": true,
           "Image": "/Image/Shorts5.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -165,6 +175,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Shirts1.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -180,6 +191,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Shirts2.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -193,6 +205,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Shirts3.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -208,6 +221,7 @@
           "rating": 4,
           "inStock": true,
           "Image": "/Image/Shirts4.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -221,6 +235,7 @@
           "rating": 5,
           "inStock": true,
           "Image": "/Image/Shirts5.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -242,6 +257,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Hoodie1.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -257,6 +273,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Hoodie2.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -270,6 +287,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Hoodie3.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -285,6 +303,7 @@
           "rating": 4,
           "inStock": true,
           "Image": "/Image/Hoodie4.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -298,6 +317,7 @@
           "rating": 5,
           "inStock": true,
           "Image": "/Image/Hoodie5.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -319,6 +339,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Jeans1.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -334,6 +355,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Jeans2.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -347,6 +369,7 @@
           "rating": 4.5,
           "inStock": true,
           "Image": "/Image/Jeans3.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -362,6 +385,7 @@
           "rating": 4,
           "inStock": true,
           "Image": "/Image/Jeans4.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
@@ -375,6 +399,7 @@
           "rating": 5,
           "inStock": true,
           "Image": "/Image/Jeans5.png",
+          "discreption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           "size": [
             { "name": "Small", "label": "S" },
             { "name": "Medium", "label": "M" },
