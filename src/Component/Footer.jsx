@@ -171,24 +171,24 @@ export default function Footer() {
               Shop.co © 2000-2023, All Rights Reserved
             </p>
             <div className="flex justify-center items-center space-x-4 mt-0">
-              <img src="/public/image/applepay.png" alt="Visa" className="" />
+              <img src="/image/applepay.png" alt="Visa" className="" />
               <img
-                src="/public/image/mastercard.png"
+                src="/image/mastercard.png"
                 alt="Apple Pay"
                 className="h-6"
               />
               <img
-                src="/public/image/paypal.png"
+                src="/image/paypal.png"
                 alt="Google Pay"
                 className="h-6"
               />
               <img
-                src="/public/image/gpay.png"
+                src="/image/gpay.png"
                 alt="Google Pay"
                 className="h-6"
               />
               <img
-                src="/public/image/visa.png"
+                src="/image/visa.png"
                 alt="Google Pay"
                 className="h-6"
               />

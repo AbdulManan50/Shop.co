@@ -10,19 +10,19 @@ export default function Home() {
       <div className="bg-black py-8">
         <div className=" w-custom mx-auto flex justify-between">
           <div>
-            <img src="/public/Image/logo1.png" alt="" />
+            <img src="/Image/logo1.png" alt="" />
           </div>
           <div>
-            <img src="/public/Image/logo2.png" alt="" />
+            <img src="/Image/logo2.png" alt="" />
           </div>
           <div>
-            <img src="/public/Image/logo3.png" alt="" />
+            <img src="/Image/logo3.png" alt="" />
           </div>
           <div>
-            <img src="/public/Image/logo4.png" alt="" />
+            <img src="/Image/logo4.png" alt="" />
           </div>
           <div>
-            <img src="/public/Image/logo5.png" alt="" />
+            <img src="/Image/logo5.png" alt="" />
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function Home() {
             <div>
               <img
                 className="rounded-xl"
-                src="/public/Image/products5.png"
+                src="/Image/products5.png"
                 alt=""
               />
             </div>
@@ -66,7 +66,7 @@ export default function Home() {
             <div>
               <img
                 className="rounded-xl"
-                src="/public/Image/products6.png"
+                src="/Image/products6.png"
                 alt=""
               />
             </div>
@@ -94,7 +94,7 @@ export default function Home() {
             <div>
               <img
                 className="rounded-xl"
-                src="/public/Image/products7.png"
+                src="/Image/products7.png"
                 alt=""
               />
             </div>
@@ -122,7 +122,7 @@ export default function Home() {
             <div>
               <img
                 className="rounded-xl"
-                src="/public/Image/products8.png"
+                src="/Image/products8.png"
                 alt=""
               />
             </div>
@@ -159,18 +159,18 @@ export default function Home() {
           BROWSE BY dress STYLE
         </h1>
         <div className="flex gap-5 mb-5">
-          <div className="w-[35%] bg-cover bg-[url('/public/Image/bg1.png')] h-[30vh] rounded-xl p-5">
+          <div className="w-[35%] bg-cover bg-[url('/Image/bg1.png')] h-[30vh] rounded-xl p-5">
             <h1 className="font-Satoshi text-xl font-bold">Casual</h1>
           </div>
-          <div className="w-[65%] bg-cover bg-[url('/public/Image/bg3.png')] h-[30vh] rounded-xl p-5">
+          <div className="w-[65%] bg-cover bg-[url('/Image/bg3.png')] h-[30vh] rounded-xl p-5">
             <h1 className="font-Satoshi text-xl font-bold">Formal</h1>
           </div>
         </div>
         <div className="flex gap-5 mb-10">
-          <div className="w-[65%] bg-cover bg-[url('/public/Image/bg2.png')] h-[30vh] rounded-xl p-5">
+          <div className="w-[65%] bg-cover bg-[url('/Image/bg2.png')] h-[30vh] rounded-xl p-5">
             <h1 className="font-Satoshi text-xl font-bold">Party</h1>
           </div>
-          <div className="w-[35%] bg-cover bg-[url('/public/Image/bg4.png')] h-[30vh] rounded-xl p-5">
+          <div className="w-[35%] bg-cover bg-[url('/Image/bg4.png')] h-[30vh] rounded-xl p-5">
             <h1 className="font-Satoshi text-xl font-bold">Gym</h1>
           </div>
         </div>
@@ -181,7 +181,7 @@ export default function Home() {
         </h1>
         <div className="flex gap-5">
           <div className="w-1/3 p-5 border-[1px] border-primary shadow-md rounded-2xl">
-            <img src="/public/Image/review.png" alt="" />
+            <img src="/Image/review.png" alt="" />
             <h1 className="font-Satoshi text-lg font-bold">Sarah M.</h1>
             <p className="font-Satoshi text-gray-400">
               "I'm blown away by the quality and style of the clothes I received
@@ -190,7 +190,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-1/3 p-5 border-[1px] border-primary shadow-md rounded-2xl">
-            <img src="/public/Image/review.png" alt="" />
+            <img src="/Image/review.png" alt="" />
             <h1 className="font-Satoshi text-lg font-bold">Alex K.</h1>
             <p className="font-Satoshi text-gray-400">
               "Finding clothes that align with my personal style used to be a
@@ -200,7 +200,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-1/3 p-5 border-[1px] border-primary shadow-md rounded-2xl">
-            <img src="/public/Image/review.png" alt="" />
+            <img src="/Image/review.png" alt="" />
             <h1 className="font-Satoshi text-lg font-bold">James L.</h1>
             <p className="font-Satoshi text-gray-400">
               "As someone who's always on the lookout for unique fashion pieces,

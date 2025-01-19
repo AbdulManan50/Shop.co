@@ -3,7 +3,7 @@ import React from "react";
 export default function Banner() {
   return (
     <>
-      <section className="bg-white h-[80vh] text-black py-12 px-8 bg-cover bg-no-repeat bg-[url('/public/Image/banner.png')]">
+      <section className="bg-white h-[80vh] text-black py-12 px-8 bg-cover bg-no-repeat bg-[url('Image/banner.png')]">
         <div className="w-custom mx-auto flex flex-col lg:flex-row items-center justify-between">
           <div className="w-1/2">
             <h1 className="text-6xl font-bold font-Integral-CF mb-4">

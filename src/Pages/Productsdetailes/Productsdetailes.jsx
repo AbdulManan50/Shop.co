@@ -25,24 +25,24 @@ export default function Productsdetailes() {
             <div className="w-1/2 flex gap-3">
               <div className="flex flex-col space-y-4 mt-4 w-[20%]">
                 <img
-                  src="/public/Image/detailes3.png"
+                  src="/Image/detailes3.png"
                   alt="Thumbnail 1"
                   className=" rounded-md cursor-pointer border border-gray-300 hover:border-black"
                 />
                 <img
-                  src="/public/Image/detailes3.png"
+                  src="/Image/detailes3.png"
                   alt="Thumbnail 2"
                   className="rounded-md cursor-pointer border border-gray-300 hover:border-black"
                 />
                 <img
-                  src="/public/Image/detailes4.png"
+                  src="/Image/detailes4.png"
                   alt="Thumbnail 3"
                   className="rounded-md cursor-pointer border border-gray-300 hover:border-black"
                 />
               </div>
               <div className="rounded-lg w-[80%]">
                 <img
-                  src="/public/Image/detailes1.png"
+                  src="/Image/detailes1.png"
                   alt="One Life Graphic T-Shirt"
                   className="w-full"
                 />
@@ -147,7 +147,7 @@ export default function Productsdetailes() {
           </div>
           <div className="gap-5 flex flex-wrap">
             <div className="w-[32%] p-5 border-[1px] border-primary shadow-md rounded-2xl">
-              <img src="/public/Image/review.png" alt="" />
+              <img src="/Image/review.png" alt="" />
               <h1 className="font-Satoshi text-lg font-bold">Sarah M.</h1>
               <p className="font-Satoshi text-gray-400">
                 "I'm blown away by the quality and style of the clothes I
@@ -156,7 +156,7 @@ export default function Productsdetailes() {
               </p>
             </div>
             <div className="w-[32%] p-5 border-[1px] border-primary shadow-md rounded-2xl">
-              <img src="/public/Image/review.png" alt="" />
+              <img src="/Image/review.png" alt="" />
               <h1 className="font-Satoshi text-lg font-bold">Alex K.</h1>
               <p className="font-Satoshi text-gray-400">
                 "Finding clothes that align with my personal style used to be a
@@ -166,7 +166,7 @@ export default function Productsdetailes() {
               </p>
             </div>
             <div className="w-[32%] p-5 border-[1px] border-primary shadow-md rounded-2xl">
-              <img src="/public/Image/review.png" alt="" />
+              <img src="/Image/review.png" alt="" />
               <h1 className="font-Satoshi text-lg font-bold">James L.</h1>
               <p className="font-Satoshi text-gray-400">
                 "As someone who's always on the lookout for unique fashion
@@ -176,7 +176,7 @@ export default function Productsdetailes() {
               </p>
             </div>
             <div className="w-[32%] p-5 border-[1px] border-primary shadow-md rounded-2xl">
-              <img src="/public/Image/review.png" alt="" />
+              <img src="/Image/review.png" alt="" />
               <h1 className="font-Satoshi text-lg font-bold">James L.</h1>
               <p className="font-Satoshi text-gray-400">
                 "As someone who's always on the lookout for unique fashion
@@ -186,7 +186,7 @@ export default function Productsdetailes() {
               </p>
             </div>
             <div className="w-[32%] p-5 border-[1px] border-primary shadow-md rounded-2xl">
-              <img src="/public/Image/review.png" alt="" />
+              <img src="/Image/review.png" alt="" />
               <h1 className="font-Satoshi text-lg font-bold">James L.</h1>
               <p className="font-Satoshi text-gray-400">
                 "As someone who's always on the lookout for unique fashion
@@ -196,7 +196,7 @@ export default function Productsdetailes() {
               </p>
             </div>
             <div className="w-[32%] p-5 border-[1px] border-primary shadow-md rounded-2xl">
-              <img src="/public/Image/review.png" alt="" />
+              <img src="/Image/review.png" alt="" />
               <h1 className="font-Satoshi text-lg font-bold">James L.</h1>
               <p className="font-Satoshi text-gray-400">
                 "As someone who's always on the lookout for unique fashion
@@ -206,7 +206,7 @@ export default function Productsdetailes() {
               </p>
             </div>
             <div className="w-[32%] p-5 border-[1px] border-primary shadow-md rounded-2xl">
-              <img src="/public/Image/review.png" alt="" />
+              <img src="/Image/review.png" alt="" />
               <h1 className="font-Satoshi text-lg font-bold">James L.</h1>
               <p className="font-Satoshi text-gray-400">
                 "As someone who's always on the lookout for unique fashion
@@ -216,7 +216,7 @@ export default function Productsdetailes() {
               </p>
             </div>
             <div className="w-[32%] p-5 border-[1px] border-primary shadow-md rounded-2xl">
-              <img src="/public/Image/review.png" alt="" />
+              <img src="/Image/review.png" alt="" />
               <h1 className="font-Satoshi text-lg font-bold">James L.</h1>
               <p className="font-Satoshi text-gray-400">
                 "As someone who's always on the lookout for unique fashion
@@ -226,7 +226,7 @@ export default function Productsdetailes() {
               </p>
             </div>
             <div className="w-[32%] p-5 border-[1px] border-primary shadow-md rounded-2xl">
-              <img src="/public/Image/review.png" alt="" />
+              <img src="/Image/review.png" alt="" />
               <h1 className="font-Satoshi text-lg font-bold">James L.</h1>
               <p className="font-Satoshi text-gray-400">
                 "As someone who's always on the lookout for unique fashion
@@ -253,7 +253,7 @@ export default function Productsdetailes() {
               <div>
                 <img
                   className="rounded-xl"
-                  src="/public/Image/products1.png"
+                  src="/Image/products1.png"
                   alt=""
                 />
               </div>
@@ -281,7 +281,7 @@ export default function Productsdetailes() {
               <div>
                 <img
                   className="rounded-xl"
-                  src="/public/Image/products2.png"
+                  src="/Image/products2.png"
                   alt=""
                 />
               </div>
@@ -309,7 +309,7 @@ export default function Productsdetailes() {
               <div>
                 <img
                   className="rounded-xl"
-                  src="/public/Image/products3.png"
+                  src="/Image/products3.png"
                   alt=""
                 />
               </div>
@@ -337,7 +337,7 @@ export default function Productsdetailes() {
               <div>
                 <img
                   className="rounded-xl"
-                  src="/public/Image/products4.png"
+                  src="/Image/products4.png"
                   alt=""
                 />
               </div>
