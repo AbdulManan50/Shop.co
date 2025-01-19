@@ -24,12 +24,12 @@ export default function Wishlist() {
           <h1 className="text-2xl font-Integral-CF">Wishlist</h1>
         </div>
         <div className="mx-auto w-custom">
-          <div className="flex gap-5 items-center">
+          <div className=" gap-5 items-center grid grid-cols-4">
             {wishlistitems.length > 0 ? (
               wishlistitems.map((product) => (
                 <div
                   key={product.id}
-                  className="w-full sm:w-[48%] lg:w-[24%] cursor-pointer"
+                  className="cursor-pointer "
                 >
                   <div className="relative group">
                     <img className="rounded-xl" src={product.Image} alt="" />

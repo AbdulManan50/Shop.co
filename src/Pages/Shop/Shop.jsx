@@ -1,36 +1,58 @@
-import React, { useEffect, useState } from "react";
-import { MdOutlineStar } from "react-icons/md";
-import { BsFilterRight } from "react-icons/bs";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect, useState, useCallback } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { fetchCategories } from "../../Redux/Slice";
-import { FaRegHeart } from "react-icons/fa";
+import { MdOutlineKeyboardArrowRight, MdOutlineStar } from "react-icons/md";
+import { FaRegHeart, FaHeart } from "react-icons/fa";
+import { addtowishlist } from "../../Redux/wishlistSlice";
+import { addtocart } from "../../Redux/AddtocartSlice";
+import { BsFilterRight } from "react-icons/bs";
 
 export default function Shop() {
-  const despatch = useDispatch();
-
+  const dispatch = useDispatch();
   const { categories, loading, error } = useSelector(
     (state) => state.categories
   );
+  const wishlistItems = useSelector((state) => state.wishlist.items);
+  const cart = useSelector((state) => state.cart.items); // Fixed the cart selector to `items`
+
+  const [allCategory, setAllCategory] = useState([]);
 
   useEffect(() => {
-    despatch(fetchCategories());
-  }, [despatch]);
-  {
-    loading && <>{"loading................."}</>;
-  }
-  {
-    error && <>{"loading................."}</>;
-  }
+    dispatch(fetchCategories());
+  }, [dispatch]);
 
-  const [allCategories, setAllCategory] = useState([]);
+  const handelwishlist = useCallback(
+    (product) => {
+      dispatch(addtowishlist(product));
+      console.log("Wishlist updated:", product);
+    },
+    [dispatch]
+  );
 
-  useEffect(() => {
-    console.log("allCategories");
-    setAllCategory(categories);
-  }, [categories]);
+  const isProductInWishlist = (id) => {
+    return wishlistItems.some((item) => item.id === id);
+  };
 
-  console.log("Asdasdasdas: ", categories);
+  const handleAddToCart = useCallback(
+    (product) => {
+      dispatch(addtocart(product));
+      console.log("Product added to cart:", product);
+    },
+    [dispatch]
+  );
+
+  if (loading)
+    return (
+      <div className="text-center py-10">
+        <p className="text-lg font-semibold">Loading...</p>
+      </div>
+    );
+  if (error)
+    return (
+      <div className="text-center py-10 text-red-500">
+        <p>Error: {error}</p>
+      </div>
+    );
 
   const handleSelectCategory = (category_name) => {
     console.log("category_name", category_name);
@@ -38,12 +60,11 @@ export default function Shop() {
     const filterCategory = categories.filter((el) => el.name === category_name);
 
     if (filterCategory?.length > 0) {
-      setAllCategory(filterCategory);
+      setAllCategory(filterCategory); // This will now work because the state is defined
     }
 
     console.log("filterCategory", filterCategory);
   };
-
   return (
     <>
       <div className="flex gap-5 items-start w-custom mx-auto">
@@ -61,7 +82,7 @@ export default function Shop() {
           <hr />
           <div className="space-y-3 pt-3">
             <div
-              onClick={() => handleSelectCategory("T-Shirts")}
+               onClick={() => handleSelectCategory("T-Shirts")}
               className="flex justify-between items-center cursor-pointer"
             >
               <h1 className="font-Satoshi">T-shirts</h1>
@@ -235,31 +256,43 @@ export default function Shop() {
         </div>
         <div className="w-[80%] py-10">
           <h1 className="font-Satoshi text-2xl font-bold pb-5">Casual</h1>
-          <div className="flex gap-y-5 flex-wrap">
-            {allCategories?.map((category) =>
-              category?.products.map((product) => (
-                <div key={product.id} className="w-[33%] pr-5 cursor-pointer">
+          <div className="flex gap-y-5 gap-5 flex-wrap">
+            {categories?.slice(0, 4).map((category) =>
+              category?.products?.slice(0, 4).map((product) => (
+                <div
+                  key={product.id}
+                  className="w-full sm:w-[48%] lg:w-[23%] cursor-pointer"
+                >
                   <div className="relative group">
-                    <h1 className="absolute p-2 rounded-full bg-white top-3 right-8 text-xl hover:text-secondary cursor-pointer opacity-0 group-hover:opacity-100 transition-all ease-out duration-500 translate-x-5 group-hover:translate-x-0 ">
-                      <FaRegHeart />
+                    <h1
+                      onClick={() => handelwishlist(product)}
+                      className="absolute p-2 rounded-full bg-white top-3 right-5 text-xl hover:text-secondary cursor-pointer opacity-0 group-hover:opacity-100 transition-all ease-out duration-500 translate-x-5 group-hover:translate-x-0"
+                    >
+                      {isProductInWishlist(product.id) ? (
+                        <FaHeart className="text-secondary" />
+                      ) : (
+                        <FaRegHeart />
+                      )}
                     </h1>
-                    <img className="rounded-xl" src={product.Image} alt="" />
+                    <img
+                      className="rounded-xl"
+                      src={product.Image || "default-image-path"} // Ensure fallback image
+                      alt={product.name}
+                    />
                   </div>
-                  <div>
-                    <h1 className="font-Satoshi text-lg font-bold pt-2">
-                      {product.name}
-                    </h1>
-                  </div>
+                  <h1 className="font-Satoshi text-lg font-bold pt-2">
+                    {product.name}
+                  </h1>
                   <div className="flex items-center gap-2">
                     <h1 className="flex gap-1 text-yellow-500">
-                      <MdOutlineStar />
-                      <MdOutlineStar />
-                      <MdOutlineStar />
-                      <MdOutlineStar />
-                      <MdOutlineStar />
+                      {Array.from({ length: product.rating }).map(
+                        (_, index) => (
+                          <MdOutlineStar key={index} />
+                        )
+                      )}
                     </h1>
-                    <h1 className="flex">
-                      <span>4.5/</span>
+                    <h1>
+                      <span>{product.rating}/</span>
                       <span className="text-primary">5</span>
                     </h1>
                   </div>
@@ -267,7 +300,10 @@ export default function Shop() {
                     <h1 className="text-xl font-Satoshi font-bold">
                       {product.price}
                     </h1>
-                    <button className="px-5 py-1 text-secondary border-[#DB4444] border-[2px] rounded-lg">
+                    <button
+                      onClick={() => handleAddToCart(product)}
+                      className="px-5 py-1 text-secondary border-[#DB4444] hover:bg-secondary hover:text-white border-[2px] rounded-lg"
+                    >
                       Add To Cart
                     </button>
                   </div>
