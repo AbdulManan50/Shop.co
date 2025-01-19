@@ -1,13 +1,17 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removewishlist } from "../../Redux/wishlistSlice";
-
+import { addtocart } from "../../Redux/AddtocartSlice";
+import { MdOutlineStar } from "react-icons/md";
 
 export default function Wishlist() {
   const dispatch = useDispatch();
   const wishlistitems = useSelector((state) => state.wishlist.items);
 
-  console.log("Wishlist::::::", wishlistitems);
+  const handleAddToCart = (product) => {
+    dispatch(addtocart(product));
+    dispatch(removewishlist(product.id));
+  };
 
   const handleRemoveWishlist = (id) => {
     dispatch(removewishlist(id));
@@ -22,32 +26,49 @@ export default function Wishlist() {
         <div className="mx-auto w-custom">
           <div className="flex gap-5 items-center">
             {wishlistitems.length > 0 ? (
-              wishlistitems.map((item) => (
+              wishlistitems.map((product) => (
                 <div
-                  key={item.id}
-                  className="w-[24%] flex flex-col items-center"
+                  key={product.id}
+                  className="w-full sm:w-[48%] lg:w-[24%] cursor-pointer"
                 >
-                  <div>
-                    <img
-                      className="rounded-xl"
-                      src={item.Image}
-                      alt={item.name}
-                    />
+                  <div className="relative group">
+                    <img className="rounded-xl" src={product.Image} alt="" />
                   </div>
-                  <div>
+                  <div className="flex justify-between pr-4">
                     <h1 className="font-Satoshi text-lg font-bold pt-2">
-                      {item.name}
+                      {product.name}
+                    </h1>
+                    <h1 className="text-xl font-Satoshi font-bold">
+                      {product.price}
                     </h1>
                   </div>
-                  <h1 className="text-xl font-Satoshi font-bold">
-                    {item.price}
-                  </h1>
-                  <button
-                    onClick={() => handleRemoveWishlist(item.id)}
-                    className="px-10 py-2 rounded-full font-Satoshi bg-[#F0F0F0] text-black hover:text-white hover:bg-black"
-                  >
-                    Remove
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <h1 className="flex gap-1 text-yellow-500">
+                      {Array.from({ length: product.rating }).map(
+                        (_, index) => (
+                          <MdOutlineStar key={index} />
+                        )
+                      )}
+                    </h1>
+                    <h1>
+                      <span>{product.rating}/</span>
+                      <span className="text-primary">5</span>
+                    </h1>
+                  </div>
+                  <div className="flex justify-between items-center pr-5">
+                    <button
+                      onClick={() => handleRemoveWishlist(product.id)}
+                      className="px-5 py-1 text-secondary border-[#DB4444] border-[2px] rounded-lg"
+                    >
+                      Remove
+                    </button>
+                    <button
+                      onClick={() => handleAddToCart(product)}
+                      className="px-5 py-1 text-secondary border-[#DB4444] border-[2px] rounded-lg"
+                    >
+                      Add To Cart
+                    </button>
+                  </div>
                 </div>
               ))
             ) : (

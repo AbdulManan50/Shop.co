@@ -3,8 +3,15 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function Header() {
+  const cartItems = useSelector((state) => state.cart.item);
+  const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+
+  const wishlistItems = useSelector((state) => state.wishlist.items);
+  const wishlistCount = wishlistItems.length;
+
   return (
     <>
       <header>
@@ -56,17 +63,30 @@ export default function Header() {
               <Link to={"/cart"}>
                 <button
                   aria-label="Cart"
-                  className="hover:text-primary focus:outline-none"
+                  className="hover:text-primary focus:outline-none relative"
                 >
                   <MdOutlineShoppingCart />
+                  {cartCount > 0 && (
+                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
+                      {cartCount}
+                    </span>
+                  )}
                 </button>
               </Link>
               <button aria-label="User" className="hover:text-primary ">
                 <FaRegUserCircle />
               </button>
               <Link to={"/wishlist"}>
-                <button aria-label="User" className="hover:text-primary ">
+                <button
+                  aria-label="User"
+                  className="hover:text-primary relative"
+                >
                   <FaRegHeart />
+                  {wishlistCount > 0 && (
+                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
+                      {wishlistCount}
+                    </span>
+                  )}
                 </button>
               </Link>
             </div>
